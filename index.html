@@ -21,6 +21,7 @@
   </head>
   <body>
     
+    <!-- site_header -->
     <header id="site_header">
         <div class="container-fluid d-flex align-items-center h-100 gap-3">
             <div class="logo">
@@ -46,8 +47,11 @@
     <!-- /#site_header -->
     <div class="container-fluid d-flex flex-no wrap p-0">
         
+            <!-- siderbar-left -->
             <div id="sidebar">
                 <nav class="d-flex flex-column justify-content-between h-100 p-4 align-items-center ">
+
+                    <!-- top siderbar -->
                     <div class="top d-flex flex-column gap-3 align-content-center">
                         <a class="d-flex gap-3 text-decoration-none" href="#">
                             <i class="fa-solid fa-house text-white fs-5"></i>
@@ -68,6 +72,9 @@
                             </div>
                         </a>
                     </div>
+                    <!-- /top siderbar -->
+
+                    <!-- bottom siderbar -->
                     <div class="bottom">
                         <a class="d-flex gap-3 text-decoration-none" href="#">
                             <i class="fa-solid fa-gear text-white fs-5"></i>
@@ -76,19 +83,51 @@
                             </div>
                         </a>
                     </div>
+                    <!-- bottom siderbar -->
+
                 </nav>
             </div>
-            <!-- /#sidebar -->
+            <!-- /#sidebar-left -->
+
+            <!-- container-right -->
             <div class="right p-0 w-100 overflow-auto">
-                <div id="banner">
-                    <div class="container-fluid h-100">
-                        <div class="row h-100 align-items-center">
-                            <div class="col-12 col-md-4 order-lg-3">Lorem.</div>
-                            <div class="col-12 col-md-4">Provident.</div>
-                            <div class="col-12 col-md-4">Molestiae.</div>
+
+                <!-- section banner -->
+                <section id="banner">
+                    <div class="container-fluid h-100 py-4 pe-5">
+                        <div class="row h-100 text-white g-4">
+                            <div class="col-12 col-md-4  col-xxl-3 order-lg-3 d-flex gap-4 align-items-center justify-content-lg-end align-self-start">
+                                <h5>Nuovo Studente</h5>
+                                <div class="button-credential-new-student border-white border rounded-3">
+                                    <a  class="text-decoration-none" href="#">
+                                        <i class="fa-solid fa-plus text-white fs-5 "></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-xxl-6 order-lg-0">
+                                <h3 class="d-inline-block">Boolean</h3>
+                                <span class="button_darker">Piano blaze</span>
+                                <div class="planes-boolean d-flex align-items-center gap-1">
+                                    <span class="button_darker">3 app</span>
+                                    <span class="fs-1 space lh-1">&#187;</span>
+                                    <span class="button_darker d-xxl-none"><i class="fa-solid fa-plus"></i></span>
+                                    <div class="d-none d-xxl-block">
+                                        <span class="button_darker">Boolean mobile app</span>
+                                        <span class="button_darker">Boolean web app</span>
+                                        <span class="button_darker">Boolean blog app</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 col-xxl-3 order-2">
+                                <h5>Studenti online negli ultimi 30 minuti</h5>
+                                <h1>
+                                    125
+                                </h1>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
+                <!-- /section banner -->
                 <main id="content">
                     <div class="container-fluid">
                         <div class="row">
@@ -107,6 +146,7 @@
 
                 </main>
             </div>
+            <!-- /container-right -->
 
 
     </div>

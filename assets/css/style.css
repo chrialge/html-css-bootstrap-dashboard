@@ -18,6 +18,11 @@ body{
 .search-bar{
     background-color: var(--boolean-student-light);
 }
+.button_darker{
+    background-color: #165bba;
+    padding: 0.15rem 0.5rem;
+    border-radius: 1rem;
+}
 
 /* region utilies */
 
@@ -28,7 +33,7 @@ body{
 }
 
 #sidebar{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 76px);
 
 
 }
@@ -41,7 +46,7 @@ nav{
 }
 #banner{
     background-color: var(--boolean-student-primary);
-    height: 100px;
+
 }
 #content{
     height: 100px;
@@ -71,6 +76,13 @@ nav{
 
 /* endregion header */
 
+/* region main */
+
+.button-credential-new-student > a > i{
+    padding: 0.5rem 0.75rem;
+}
+
+/* end region main */
 /* region media lg */
 
 @media screen and (min-width: 992px){
