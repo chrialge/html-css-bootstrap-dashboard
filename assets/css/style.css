@@ -1,0 +1,13 @@
+/* region common */
+:root{
+    --boolean-student-primary: #1b72e8;
+    --boolean-student-dark: #142a40;
+    --boolean-student-darker: #051e34;
+    --boolean-student-light: #e5e5e5;
+    --boolean-student-lighter: #ffffff;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/* endregion common */
