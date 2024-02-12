@@ -52,13 +52,11 @@ nav{
     height: 100px;
 }
 .left_content{
-    background-color: yellow;
+
     height: 900px;
 }
 .card{
-    background-color: orange;
-    height: 400px;
-    margin: 10px;
+    margin: 40px 10px;
 }
 .right_content{
     background-color: gray;
@@ -82,6 +80,18 @@ nav{
     padding: 0.5rem 0.75rem;
 }
 
+.card-size{
+    width: 88px;
+    text-align: center;
+}
+.logo-card-class{
+    width: 30px;
+}
+.action-class > a > i{
+    border: 1px solid;
+    border-radius: 0.25rem;
+    width: 30px;
+}
 /* end region main */
 /* region media lg */
 
