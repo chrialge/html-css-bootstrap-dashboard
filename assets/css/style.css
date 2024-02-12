@@ -9,5 +9,42 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 /* endregion common */
+
+/* debug */
+#site_header{
+    height: 100px;
+    background-color: green;
+}
+
+#sidebar{
+    height: calc(100vh - 100px);
+    width: 100px;
+}
+nav{
+    background-color: var(--boolean-student-dark);
+    color: var(--boolean-student-lighter);
+}
+.right{
+    overflow-y: auto;
+}
+#banner{
+    background-color: var(--boolean-student-primary);
+    height: 100px;
+}
+#content{
+    height: 100%;
+}
+.left_content{
+    background-color: yellow;
+}
+.card{
+    background-color: orange;
+    height: 400px;
+    margin: 30px;
+}
+.right_content{
+    background-color: gray;
+}
