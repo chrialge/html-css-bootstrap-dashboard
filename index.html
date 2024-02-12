@@ -22,10 +22,25 @@
   <body>
     
     <header id="site_header">
-        <div class="container-fluid d-flex align-items-center h-100">
-            <div class="logo">lorem</div>
-            <div class="search flex-grow-1 text-center">lorem</div>
-            <div class="option">lorem</div>
+        <div class="container-fluid d-flex align-items-center h-100 gap-3">
+            <div class="logo">
+                <img src="./assets/img/logo.svg" alt="">
+            </div>
+            <div class="search flex-grow-1 text-center">
+                <form class="search-bar input-group rounded-2">
+                    <button class="btn border-0" type="button" id="button-addon1"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="search" class="form-control border-0 " placeholder="Prova a cercare: Lezioni di lavarel" aria-label="Example text with button addon" disabled readonlyaria-describedby="button-addon1">
+                </form>
+            </div>
+            <div class="option d-flex gap-3">
+                <div class="collapse-option d-none d-lg-block">
+                    <a href="#"><i class="fa-solid fa-list-ul px-2 text-dark"></i></a>
+                    <a href="#"><i class="fa-solid fa-circle-info px-2 text-dark"></i></a>
+                    <a href="#"><i class="fa-solid fa-ellipsis-vertical px-2 text-dark"></i></a>
+                </div>
+                <a href="#"><i class="fa-solid fa-bell text-warning fs-5"></i></a>
+
+            </div>
         </div>
     </header>
     <!-- /#site_header -->
@@ -44,7 +59,7 @@
                 </nav>
             </div>
             <!-- /#sidebar -->
-            <div class="right p-0 w-100">
+            <div class="right p-0 w-100 overflow-auto">
                 <div id="banner">
                     <div class="container-fluid h-100">
                         <div class="row h-100 align-items-center">
@@ -55,8 +70,8 @@
                     </div>
                 </div>
                 <main id="content">
-                    <div class="container-fluid h-100">
-                        <div class="row h-100">
+                    <div class="container-fluid">
+                        <div class="row">
                             <div class="left_content col-12 col-lg-7">
                                 <div class="card"></div>
                                 <div class="card"></div>
