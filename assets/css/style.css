@@ -29,7 +29,8 @@ body{
 
 #sidebar{
     height: calc(100vh - 100px);
-    width: 100px;
+
+
 }
 nav{
     background-color: var(--boolean-student-dark);
