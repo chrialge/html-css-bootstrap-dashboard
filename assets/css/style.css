@@ -33,7 +33,7 @@ body{
 }
 
 #sidebar{
-    height: calc(100vh - 76px);
+    height: calc(100vh - 73px);
 
 
 }
@@ -41,27 +41,17 @@ nav{
     background-color: var(--boolean-student-dark);
     color: var(--boolean-student-lighter);
 }
-.right{
+.right-important{
     overflow-y: auto;
 }
 #banner{
     background-color: var(--boolean-student-primary);
+}
 
-}
-#content{
-    height: 100px;
-}
-.left_content{
-
-    height: 900px;
-}
 .card{
-    margin: 40px 10px;
+    margin: 20px 10px;
 }
-.right_content{
-    background-color: gray;
-    height: 900px;
-}
+
 /* enddebug */
 
 /* region header */
@@ -73,6 +63,13 @@ nav{
 
 
 /* endregion header */
+
+/* sidebar */
+.hover-gray-sidebar:hover{
+    background-color: gray;
+}
+/* /sidebar */
+
 
 /* region main */
 

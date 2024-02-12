@@ -28,10 +28,12 @@
                 <img src="./assets/img/logo.svg" alt="">
             </div>
             <div class="search flex-grow-1 text-center">
-                <form class="search-bar input-group rounded-2">
-                    <button class="btn border-0" type="button" id="button-addon1"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input type="search" class="form-control border-0 " placeholder="Prova a cercare: Lezioni di lavarel" aria-label="Example text with button addon" disabled readonlyaria-describedby="button-addon1">
-                </form>
+                <div class="input-group border rounded-3">
+                    <span class="input-group-text border-0" id="basic-addon1">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <input type="text" class="form-control border-0" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
             </div>
             <div class="option d-flex gap-3">
                 <div class="collapse-option d-none d-lg-block">
@@ -52,20 +54,20 @@
                 <nav class="d-flex flex-column justify-content-between h-100 p-4 align-items-center ">
 
                     <!-- top siderbar -->
-                    <div class="top d-flex flex-column gap-3 align-content-center">
-                        <a class="d-flex gap-3 text-decoration-none" href="#">
+                    <div class="top d-flex flex-column align-content-center">
+                        <a class="hover-gray-sidebar d-flex gap-3 text-decoration-none py-2 px-1" href="#">
                             <i class="fa-solid fa-house text-white fs-5"></i>
                             <div class="text-disable d-none d-lg-block">
                                 <span class="text-white ">Home</span>
                             </div>
                         </a>
-                        <a class="d-flex gap-3 text-decoration-none" href="#">
+                        <a class="hover-gray-sidebar d-flex gap-3 text-decoration-none py-2 px-1" href="#">
                             <i class="fa-solid fa-chart-simple text-white fs-5 pe-2"></i>
                             <div class="text-disable d-none d-lg-block">
                                 <span class="text-white ">Stats</span>
                             </div>
                         </a>
-                        <a class="d-flex gap-3 text-decoration-none" href="#">
+                        <a class="hover-gray-sidebar d-flex gap-3 text-decoration-none py-2 px-1" href="#">
                             <i class="fa-solid fa-signal text-white fs-5"></i>
                             <div class="text-disable d-none d-lg-block">
                                 <span class="text-white ">Signals</span>
@@ -76,7 +78,7 @@
 
                     <!-- bottom siderbar -->
                     <div class="bottom">
-                        <a class="d-flex gap-3 text-decoration-none" href="#">
+                        <a class="hover-gray-sidebar d-flex gap-3 text-decoration-none py-2 px-1" href="#">
                             <i class="fa-solid fa-gear text-white fs-5"></i>
                             <div class="text-disable d-none d-lg-block">
                                 <span class="text-white ">Admin</span>
@@ -90,7 +92,7 @@
             <!-- /#sidebar-left -->
 
             <!-- container-right -->
-            <div class="right p-0 w-100 overflow-auto">
+            <div class="right-important p-0 w-100">
 
                 <!-- section banner -->
                 <section id="banner">
@@ -128,10 +130,12 @@
                     </div>
                 </section>
                 <!-- /section banner -->
-                <main id="content">
+                <main id="content search-bar">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="left_content col-12 col-lg-7 p-0">
+                            <div class="left_content col-12 col-lg-8 p-0">
+
+                                <!-- future class -->
                                 <div class="card border-2">
                                     <div class="card-header">
                                         <h2>Prossime classi</h2>
@@ -382,6 +386,9 @@
 
                                     </div>
                                 </div>
+                                <!-- /future class -->
+
+                                <!-- faq -->
                                 <div class="card border-2">
                                     <div class="card-header">
                                         <h2>F.A.Q.</h2>
@@ -428,12 +435,16 @@
                                       </div>
                                     
                                 </div>
+                                <!-- /faq -->
+
                             </div>
                             <!-- /.left_content -->
 
                             <!-- right-content -->
-                            <div class="right_content col-12 col-lg-5 p-0">
-                                <div class="card">
+                            <div class="right_content col-12 col-lg-4 p-0">
+
+                                <!-- todo -->
+                                <div class="card border-2">
                                     <div class="card-header">
                                         <h2>Todo</h2>
                                     </div>
@@ -457,11 +468,36 @@
                                        
                                     </div>
                                 </div>
-                                <div class="card">
+                                <!-- /todo -->
+
+                                <!-- stats -->
+                                <div class="card border-2">
                                     <div class="container-stats border m-3 ">
-                                        <img class="w-100" src="./assets/img/stats.jpeg" alt="">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <img class="w-100" src="./assets/img/stats.jpeg" alt="">
+                                                <h4>Utenti attivi</h4>
+                                                <span>
+                                                    Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                                </span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span>Gennaio: 1200</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span>Febbraio: 800</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <span>Marzo: 1500</span>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#">Visualizza report approfondito</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
+                                <!-- /stats -->
+
                             </div>
                             <!-- /.right_content -->
                         </div>
