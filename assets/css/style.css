@@ -35,10 +35,11 @@ nav{
     height: 100px;
 }
 #content{
-    height: 100%;
+    height: 100;
 }
 .left_content{
     background-color: yellow;
+    height: 900px;
 }
 .card{
     background-color: orange;
@@ -47,4 +48,5 @@ nav{
 }
 .right_content{
     background-color: gray;
+    height: 900px;
 }
