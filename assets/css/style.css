@@ -9,13 +9,17 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-
+    padding-top: 76px;
+    overflow: hidden;
 }
 /* endregion common */
 
 /* region utilies */
 
 .search-bar{
+    background-color: var(--boolean-student-light);
+}
+#bg_lighter{
     background-color: var(--boolean-student-light);
 }
 .button_darker{
@@ -52,8 +56,7 @@ body{
 /* sidebar */
 
 #sidebar{
-    height: calc(100vh - 76px);
-    top: 76px;
+    height: calc(100% - 76px);
     position: fixed;
     left: 0;
     background-image: url(../img/sidebar-bg.png);
@@ -72,15 +75,18 @@ body{
 
 
 /* region main */
-.right-important{
-    margin-top: 76px;
-    margin-left: 80px;
+.wrapper{
+    height: calc(100vh - 76px);
     overflow-y: auto;
+}
+.right-important {
+    margin-left: 80px;
+    height: 100%;
 
-    & #banner{
+    & #banner {
         background-color: var(--boolean-student-primary);
 
-        & .dimension{
+        & .dimension {
             width: 100%;
         }
     }
@@ -120,9 +126,12 @@ body{
 
 @media screen and (min-width: 1200px){
 
-    .dimension_lg{
-
-        width: 50%;
+    .right-important {
+        & #banner {
+            & .dimension  {
+                width: 50%;
+            }
+        }
     }
 }
 
