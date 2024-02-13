@@ -35,30 +35,25 @@
                     <input type="text" class="form-control border-0" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
             </div>
-            <div class="option d-flex gap-3">
+            <div class="option align-items-center d-flex gap-3">
                 <div class="collapse-option d-none d-lg-block">
                     <a href="#"><i class="fa-solid fa-list-ul px-2 text-dark"></i></a>
                     <a href="#"><i class="fa-solid fa-circle-info px-2 text-dark"></i></a>
                     <a href="#"><i class="fa-solid fa-ellipsis-vertical px-2 text-dark"></i></a>
                 </div>
-                <div class="dropdown_action">
-                    <a href="#">
+                <div class="btn-group">
+                    <button type="button" class="btn text-warning" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bell_action fa-solid fa-bell text-warning fs-5 position-relative"></i>
-                    </a>
-                    <ul class="dropdown_bell position-absolute end-0 list-unstyled my-4 bg-white me-3">
-                        <li>
-                            <a class="text-decoration-none text-dark" href="#">Profilo</a>
-                        </li>
-                        <li>
-                            <a class="text-decoration-none text-dark" href="#">Fatturazione</a>
-                        </li>
-                        <li>
-                            <a class="text-decoration-none text-dark" href=" #">logout</a>
-                        </li>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><button class="dropdown-item" type="button">Profili</button></li>
+                      <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                      <li><button class="dropdown-item" type="button">Logout</button></li>
                     </ul>
-                </div>
+                  </div>
+        
 
-
+                
             </div>
         </div>
     </header>
@@ -108,7 +103,7 @@
             <!-- /#sidebar-left -->
 
             <!-- container-right -->
-            <div class="right-important p-0 w-100">
+            <main class="right-important p-0 w-100">
 
                 <!-- section banner -->
                 <section id="banner">
@@ -117,8 +112,103 @@
                             <div class="col-12 col-md-4  col-xxl-3 order-lg-3 d-flex gap-4 align-items-center justify-content-lg-end align-self-start">
                                 <h5>Nuovo Studente</h5>
                                 <div class="button-credential-new-student border-white border rounded-3">
-                                    <a  class="text-decoration-none" href="#">
-                                        <i class="fa-solid fa-plus text-white fs-5 "></i>
+                                    <a  class="text-decoration-none text-dark" href="#">
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white fs-5 "></i></button>
+                                        <div class="offcanvas offcanvas-end w-100 w-lg-50 " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                              
+                                            <div class="row">
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                                                        <input type="text" class="form-control" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                                                        <input type="text" class="form-control" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                                        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="inputPassword5" class="form-label">Password</label>
+                                                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="mb-3">
+                                                        <label for="address" class="form-label">
+                                                            Indirizzo
+                                                        </label>
+                                                        <input type="text" class="form-control"  placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <div class="mb-3">
+                                                        <label for="city" class="form-label">
+                                                            Citta
+                                                        </label>
+                                                        <input type="text" class="form-control" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="mb-3">
+                                                        <label for="state" class="mb-2">Stato</label>
+                                                        <select class="form-select" aria-label=" select example">
+                                                            <option selected>Scegli...</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-12 col-md-2">
+                                                    <div class="mb-3">
+                                                        <label for="cap" class="form-label">
+                                                            CAP
+                                                        </label>
+                                                        <input type="text" class="form-control" " placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="mb-3">
+                                                        <label for="formFile" class="form-label">Foto</label>
+                                                        <input class="form-control" type="file" id="formFile">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check my-3">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                          Seleziona per proseguire
+                                                        </label>
+                                                      </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <span class="py-2 px-3 rounded-2 bg-primary text-white ms-1">
+                                                        Salva
+                                                    </span>
+                                                    <span class="py-2 px-3 rounded-2 bg-warning text-dark ms-1">
+                                                        Svuota
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -437,7 +527,7 @@
                                         <div class="accordion-item">
                                           <h2 class="accordion-header" id="headingThree">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                              Accordion Item #3
+                                              Posso usare questa dashboard da mobile?
                                             </button>
                                           </h2>
                                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -520,7 +610,7 @@
                     </div>
 
                 </main>
-            </div>
+            </main>
             <!-- /container-right -->
 
 

@@ -26,40 +26,8 @@ body{
 
 /* region utilies */
 
-/* debug */
-#site_header{
-    padding: 20px 0;
-    z-index: 2;
-    background-color: var(--boolean-student-lighter);
-    width: 100%;
-}
-
-#sidebar{
-    height: calc(100vh - 76px);
-    top: 76px;
-    position: fixed;
-    left: 0;
-}
-nav{
-    background-color: var(--boolean-student-dark);
-    color: var(--boolean-student-lighter);
-}
-.right-important{
-    margin-top: 76px;
-    margin-left: 80px;
-    overflow-y: auto;
-}
-#banner{
-    background-color: var(--boolean-student-primary);
-}
-
-.card{
-    margin: 20px 10px;
-}
-
-/* enddebug */
-
 /* region header */
+
 #site_header{
     padding: 20px 0;
     z-index: 2;
@@ -70,55 +38,68 @@ nav{
         width: 40px;
         overflow-x: hidden;
     }
-    & .dropdown_bell{
-        min-width: 150px;
-        border-radius: 5px;
-        box-shadow: 1px 1px 10px black;
-        padding: 3px 0;
-        visibility: hidden;
-
-        & > li {
-            padding: 3px 10px;
-        }
-        & > li:hover{
-            background-color: var(--boolean-student-light);
-        }
-
+    
+    .dropdown-item:hover{
+    background-color: var(--boolean-student-light);
     }
-    & .dropdown_action > a:hover .dropdown_action>.dropdown_bell{
-        visibility: visible;
-    }
+
+    
+
 }
-
-
 
 /* endregion header */
 
 /* sidebar */
-.hover-gray-sidebar:hover{
-    background-color: gray;
+
+#sidebar{
+    height: calc(100vh - 76px);
+    top: 76px;
+    position: fixed;
+    left: 0;
+
+    & .hover-gray-sidebar:hover{
+        background-color: gray;
+    }
+
+    & nav{
+        background-color: var(--boolean-student-dark);
+        color: var(--boolean-student-lighter);
+    }
 }
+
 /* /sidebar */
 
 
 /* region main */
+.right-important{
+    margin-top: 76px;
+    margin-left: 80px;
+    overflow-y: auto;
 
-.button-credential-new-student > a > i{
-    padding: 0.5rem 0.75rem;
+    & #banner{
+        background-color: var(--boolean-student-primary);
+    }
+
+    & .card{
+        margin: 20px 10px;
+
+        & .card-size{
+            width: 88px;
+            text-align: center;
+        }
+
+        & .logo-card-class{
+            width: 30px;
+        }
+
+        & .action-class > a > i{
+            border: 1px solid;
+            border-radius: 0.25rem;
+            width: 30px;
+        }
+    }
 }
 
-.card-size{
-    width: 88px;
-    text-align: center;
-}
-.logo-card-class{
-    width: 30px;
-}
-.action-class > a > i{
-    border: 1px solid;
-    border-radius: 0.25rem;
-    width: 30px;
-}
 /* end region main */
 /* region media lg */
 
@@ -131,6 +112,10 @@ nav{
         margin-left: 145px;
     }
 }
-
+@media screen and (min-width: 1200px){
+    .dimension_lg{
+        width: 50%;
+    }
+}
 
 /* endregion media lg */
