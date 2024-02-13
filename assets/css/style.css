@@ -56,13 +56,14 @@ body{
     top: 76px;
     position: fixed;
     left: 0;
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #142a40;
 
     & .hover-gray-sidebar:hover{
         background-color: gray;
     }
 
     & nav{
-        background-color: var(--boolean-student-dark);
         color: var(--boolean-student-lighter);
     }
 }
@@ -78,6 +79,10 @@ body{
 
     & #banner{
         background-color: var(--boolean-student-primary);
+
+        & .dimension{
+            width: 100%;
+        }
     }
 
     & .card{
@@ -112,8 +117,11 @@ body{
         margin-left: 145px;
     }
 }
+
 @media screen and (min-width: 1200px){
+
     .dimension_lg{
+
         width: 50%;
     }
 }
