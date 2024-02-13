@@ -60,11 +60,36 @@ nav{
 /* enddebug */
 
 /* region header */
+#site_header{
+    padding: 20px 0;
+    z-index: 2;
+    background-color: var(--boolean-student-lighter);
+    width: 100%;
 
-.logo{
-    width: 40px;
-    overflow-x: hidden;
+    & .logo{
+        width: 40px;
+        overflow-x: hidden;
+    }
+    & .dropdown_bell{
+        min-width: 150px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px black;
+        padding: 3px 0;
+        visibility: hidden;
+
+        & > li {
+            padding: 3px 10px;
+        }
+        & > li:hover{
+            background-color: var(--boolean-student-light);
+        }
+
+    }
+    & .dropdown_action > a:hover .dropdown_action>.dropdown_bell{
+        visibility: visible;
+    }
 }
+
 
 
 /* endregion header */
