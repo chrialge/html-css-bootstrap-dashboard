@@ -9,7 +9,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;
+
 }
 /* endregion common */
 
@@ -29,19 +29,24 @@ body{
 /* debug */
 #site_header{
     padding: 20px 0;
-
+    z-index: 2;
+    background-color: var(--boolean-student-lighter);
+    width: 100%;
 }
 
 #sidebar{
-    height: calc(100vh - 73px);
-
-
+    height: calc(100vh - 76px);
+    top: 76px;
+    position: fixed;
+    left: 0;
 }
 nav{
     background-color: var(--boolean-student-dark);
     color: var(--boolean-student-lighter);
 }
 .right-important{
+    margin-top: 76px;
+    margin-left: 80px;
     overflow-y: auto;
 }
 #banner{
@@ -96,6 +101,9 @@ nav{
     .logo{
         overflow: visible;
         width: 130px;
+    }
+    .right-important{
+        margin-left: 145px;
     }
 }
 
