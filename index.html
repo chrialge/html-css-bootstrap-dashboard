@@ -112,104 +112,101 @@
                             <div class="col-12 col-md-4  col-xxl-3 order-lg-3 d-flex gap-4 align-items-center justify-content-lg-end align-self-start">
                                 <h5>Nuovo Studente</h5>
                                 <div class="button-credential-new-student border-white border rounded-3">
-                                    <a  class="text-decoration-none text-dark" href="#">
-                                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white fs-5 "></i></button>
-                                        <div class="offcanvas offcanvas-end dimension_lg dimension" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                        <div class="offcanvas-header">
-                                            <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                        </div>
-                                        <div class="offcanvas-body">
-                                              
-                                            <div class="row">
-                                                <div class="col-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
-                                                        <input type="text" class="form-control" placeholder="">
-                                                    </div>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white fs-5 "></i></button>
+                                    <div class="offcanvas offcanvas-end dimension_lg dimension" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">    
+                                        <div class="row text-dark">
+                                            <div class="col-12 col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="name" class="form-label">Nome</label>
+                                                    <input type="text" class="form-control" placeholder="" id="name">
                                                 </div>
-                                                <div class="col-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="exampleFormControlInput1" class="form-label">Cognome</label>
-                                                        <input type="text" class="form-control" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                                    <div class="input-group mb-3">
-                                                        <span class="input-group-text" id="basic-addon1">@</span>
-                                                        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="inputPassword5" class="form-label">Password</label>
-                                                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label for="address" class="form-label">
-                                                            Indirizzo
-                                                        </label>
-                                                        <input type="text" class="form-control"  placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <div class="mb-3">
-                                                        <label for="city" class="form-label">
-                                                            Citta
-                                                        </label>
-                                                        <input type="text" class="form-control" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <div class="mb-3">
-                                                        <label for="state" class="mb-2">Stato</label>
-                                                        <select class="form-select" aria-label=" select example">
-                                                            <option selected>Scegli...</option>
-                                                            <option value="1">One</option>
-                                                            <option value="2">Two</option>
-                                                            <option value="3">Three</option>
-                                                        </select>
-                                                    </div>
-                                                    
-                                                </div>
-                                                <div class="col-12 col-md-2">
-                                                    <div class="mb-3">
-                                                        <label for="cap" class="form-label">
-                                                            CAP
-                                                        </label>
-                                                        <input type="text" class="form-control" " placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="mb-3">
-                                                        <label for="formFile" class="form-label">Foto</label>
-                                                        <input class="form-control" type="file" id="formFile">
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div class="form-check my-3">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                        <label class="form-check-label" for="flexCheckDefault">
-                                                          Seleziona per proseguire
-                                                        </label>
-                                                      </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <span class="py-2 px-3 rounded-2 bg-primary text-white ms-1">
-                                                        Salva
-                                                    </span>
-                                                    <span class="py-2 px-3 rounded-2 bg-warning text-dark ms-1">
-                                                        Svuota
-                                                    </span>
-                                                </div>
-
                                             </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="surname" class="form-label">Cognome</label>
+                                                    <input type="text" class="form-control" placeholder="" id="surname">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <label for="email" class="form-label">Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1" id="email">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="inputPassword5" class="form-label">Password</label>
+                                                    <input type="password" id="inputPassword5" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="address" class="form-label">
+                                                        Indirizzo
+                                                    </label>
+                                                    <input type="text" class="form-control"  placeholder="" id="address">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="city" class="form-label">
+                                                        Citta
+                                                    </label>
+                                                    <input type="text" class="form-control" placeholder="" id="city">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="mb-3">
+                                                    <label for="state" class="mb-2">Stato</label>
+                                                    <select class="form-select" aria-label=" select example" id="state">
+                                                        <option selected>Scegli...</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="col-12 col-md-2">
+                                                <div class="mb-3">
+                                                    <label for="cap" class="form-label">
+                                                        CAP
+                                                    </label>
+                                                    <input type="text" class="form-control" placeholder="" id="cap">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="mb-3">
+                                                    <label for="formFile" class="form-label">Foto</label>
+                                                    <input class="form-control" type="file" id="formFile">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check my-3">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Seleziona per proseguire
+                                                    </label>
+                                                    </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <span class="py-2 px-3 rounded-2 bg-primary text-white ms-1">
+                                                    Salva
+                                                </span>
+                                                <span class="py-2 px-3 rounded-2 bg-warning text-dark ms-1">
+                                                    Svuota
+                                                </span>
+                                            </div>
+
                                         </div>
-                                        </div>
-                                    </a>
+                                    </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-4 col-xxl-6 order-lg-0">
@@ -236,7 +233,7 @@
                     </div>
                 </section>
                 <!-- /section banner -->
-                <main id="content search-bar">
+                <div id="content">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="left_content col-12 col-lg-8 p-0">
@@ -609,7 +606,7 @@
                         </div>
                     </div>
 
-                </main>
+                </div>
             </main>
             <!-- /container-right -->
 
